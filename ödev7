@@ -1,0 +1,33 @@
+--film  tablosunda  bulunan  filmlerin  derecelendirme  değerlerine  göre  gruplayınız.
+SEÇME
+	değerlendirme,
+
+İTİBAREN
+	halka açık film
+ GRUPLANDIRMA ŞEKLİ
+	değerlendirme
+
+--film  tablosunda  bulunan  filmlerin  değiştirme_maliyet  sütununa  göre  grupladığımızda  film  sayıları  50  den  fazla  olan  değiştirme_maliyet  değeri  ve  buna karşılık  gelen  film  sayısını  sıralayınız.
+SEÇME
+	değiştirme ücreti,
+ SONUC OLARAK sayım (başlık)  
+İTİBAREN
+	halka açık film
+ GRUPLANDIRMA ŞEKLİ
+değiştirme ücreti
+SAHİP OLMAK
+COUNT  (başlık)>50
+ SONUC'A GÖRE  SİPARİŞ
+
+--3.  şehir  tablolarında  bulunan  şehirlerin  ülke_id sütununa göre gruplandırdıktan  sonra en fazla şehir sayısını barındıran ülke_id bilgilerini ve şehirleri paylaşınız .​               
+
+SEÇME 
+	ülke_kimliği,
+	COUNT( * )  AS  city_count
+İTİBAREN 
+	şehir
+ GRUPLANDIRMA ŞEKLİ 
+	ülke_kimliği
+ TARAFINDAN SİPARİŞ 
+	city_count  DESC
+SINIR  1
