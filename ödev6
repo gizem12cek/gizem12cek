@@ -1,0 +1,30 @@
+--film  tablosunda  bulunan  kiralama_oran  sütunundaki  değerlerin  miktarı  nedir ?
+SEÇME
+	YUVARLAK  (AVG  (rental_rate),2)  ORTALAMA olarak 
+İTİBAREN
+	 film
+
+--film  tablosunda  bulunan  filmlerden  kaç  tanesi  'C'  karakteri  ile  başlar ?
+SEÇME
+
+	TOPLA  (dil_kimliği)
+İTİBAREN
+	halka açık film
+NEREDE
+	 'C%' GİBİ  başlık
+--film  tablosunda  bulunan  filmlerden  kiralama oranı  değeri  0.99  a  eşit  olan  en  uzun  (uzunluk)  film  kaç  dakikadır ?	
+SEÇME
+
+	Maksimum  uzunluk)
+İTİBAREN
+	halka açık film
+NEREDE
+	kiralama_oranı  =  0,99
+--film  tablosunda  bulunan  filmlerin  uzunluğu  150  dakikadan  büyük  olanlarına  ait  kaç  farklı  değiştirme_maliyet  değeri  vardır ?
+SEÇME
+
+	COUNT  (değiştirme_maliyeti)
+İTİBAREN
+	halka açık film
+NEREDE
+	uzunluk  >  150
